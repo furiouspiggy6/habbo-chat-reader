@@ -1,0 +1,33 @@
+GITHUB ONE-TIME SETUP (NO TERMINAL REQUIRED)
+==========================================
+
+1. Sign into github.com. Click + -> New repository.
+2. Repository name: habbo-chat-reader
+3. Visibility: Public (the app's updater reads public files without API keys).
+   Make sure there are NO secrets, passwords, model files, chat logs, or
+   personal data in this public repository.
+4. Create repository. Open the repo page -> Add file -> Upload files.
+5. From this extracted Habbo_Chat_Reader folder, drag the SOURCE FILES into
+   the upload box, including VERSION, habbo_reader.py, local_tts.py,
+   updater.py, update_manager.py, all other .py/.bat files,
+   requirements.txt and README.txt. Upload individual files to the ROOT
+   of the repository, not the whole ZIP or folder.
+   NEVER upload .venv, downloaded .onnx files or settings.json.
+6. Click Commit changes. Main branch is recommended/default.
+7. Launch the reader, click Set GitHub repo, paste
+   https://github.com/YOUR_USERNAME/habbo-chat-reader
+8. Click Check for updates. It should say current version v8.2.0.
+
+FUTURE FIXES
+============
+When a new source version is published to that SAME GitHub repo, with
+VERSION changed (e.g. 8.2.1), the app will detect it on next launch.
+It will ask for approval before downloading, installing, and restarting.
+
+You can ask ChatGPT to modify the program and produce updated source files.
+To publish them to your repository from ChatGPT, a compatible, connected
+GitHub integration with write permissions would be required. Otherwise
+upload the replacement files to your GitHub repository in one commit.
+
+For privacy, do not upload Habbo messages, screenshots, saved settings or
+Kokoro voice models. The app never uploads Habbo content to GitHub.
